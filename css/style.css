@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #153d6c;
+  background-image: linear-gradient(
+      180deg,
+      rgb(17 17 126 / 15%),
+      rgba(35, 35, 40, 0.8) 85%
+    ),
+    radial-gradient(
+      ellipse at top left,
+      rgba(45, 68, 75, 0.71),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at top right,
+      rgba(180, 221, 231, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center right,
+      rgb(19 127 177 / 65%),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center left,
+      rgba(15, 122, 209, 0.86),
+      #142f78b3 50%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin: 0 auto;
+}
+
+#tudo {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh;
+  flex-direction: column;
+}
+
+#content {
+  display: flex;
+  gap: 100px;
+}
+
+#esq {
+  /*display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: center;*/
+  display: grid;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+  width: 25em;
+  height: auto;
+  align-self: center;
+}
+
+h1 {
+  color: white;
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+h2 {
+  color: white;
+}
+
+a,
+button {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 128, 0);
+  padding: 16px 50px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: 1.5em;
+  border-radius: 100px;
+  border: none;
+  text-align: center;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*#pergunta-avancar {
+  margin-top: 20px;
+  max-width: 200px;
+  pointer-events: none;
+  opacity: 0.5;
+}*/
+
+#avancar {
+  margin-top: 20px;
+  max-width: 200px;
+}
+
+a:active {
+  background-color: rgb(0, 180, 0);
+}
+
+#dir img {
+  display: flex;
+  max-height: 500px;
+  align-self: center;
+}
+
+label {
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+input {
+  margin-top: 4px;
+}
+
+#checkbox-forms {
+  margin-bottom: 20px;
+}
+
+#checkbox-forms span {
+  display: block;
+  font-size: 1.1em;
+  color: white;
+  font-weight: bold;
+  margin: 10px 0px 7px 10px; /*top, right, bottom, left*/
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  /*background-image: url(../img/grafismo.svg);
+    background-repeat: repeat-x;*/
+}
+
+/*footer {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    justify-content: center;
+    background-image: url(../img/grafismo.svg);
+    background-repeat: repeat-x;
+}*/
+
+#dellamed-logo {
+  display: flex;
+  max-width: 400px;
+  margin-top: 3em;
+}
+
+#setas-btn {
+  max-height: 1em;
+  margin-left: 1em;
+}
+
+#setas-btn2 {
+  max-height: 1em;
+  margin-right: 1em;
+}
+
+#blue-card {
+  /*display: block;
+    position: relative;
+    right: 0;*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /*background: white;*/
+  /*border-radius: 50px;*/
+  padding: 20px 0px 0px 80px;
+  /*width: 600px;*/
+  /*color: #153d6c;*/
+  color: white;
+  border-left: solid 1px #374367;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#blue-card-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+#blue-card img {
+  height: 50%;
+  position: absolute;
+  z-index: -1;
+  bottom: 5em;
+  right: 14em;
+}
+
+#forms {
+  display: flex;
+  flex-direction: column;
+}
+
+#btn-index {
+  width: 248px;
+}
+
+#btn-voltar {
+  width: 298px;
+}
+
+.forms-btn {
+  width: 275px;
+}
+
+.forms-style {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+li {
+  margin: 5px;
+}
+
+#blue-card-title {
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+#blue-card-slogan {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+#blue-card-subtitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  /*margin-left: 1.9em;*/
+}
+
+#blue-card ul {
+  font-size: 1.5em;
+}
+
+#frase-voltar {
+  color: white;
+  font-size: 1.5em;
+}
+
+/*#blue-card-subtitle::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    background: #3DB9E3;
+    right: 373px;
+}*/

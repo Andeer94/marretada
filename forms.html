@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="tudo">
+        <div id="content">
+            <div id="esq" class="borda">
+                <h1>Para continuar, preencha os dados abaixo:</h1>
+                <form id="forms" action="submit.html">
+                    <div class="inputs">
+                        <label for="nome">Nome*</label>
+                        <input type="text" id="nome" class="forms-style forms-check obrigatorio" oninput="verificarCampos()">
+                    </div>
+                    <div class="inputs">
+                        <label for="razao">Razão Social*</label>
+                        <input type="text" id="razao" class="forms-style forms-check obrigatorio" oninput="verificarCampos()">
+                    </div>
+                    <div class="inputs">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" id="cnpj" class="forms-style forms-check" pattern="[0-9]{14}" maxlength="14">
+
+                    </div>
+                    <div class="inputs">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" class="forms-style forms-check obrigatorio" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" oninput="verificarCampos()">
+                    </div>
+                    <div class="inputs">
+                        <label for="tel">Telefone*</label>
+                        <input type="text" id="tel" class="forms-style forms-check obrigatorio" pattern="[0-9]{11}" oninput="verificarCampos()" maxlength="11">
+                    </div>
+                    <div id="checkbox-forms">
+                        <span>Você já é cliente Dellamed?*</span>
+                        <input type="radio" id="cliente" class="forms-check" name="cliente_dellamed" value="sim" onclick="atualizarClienteDellamed('sim')">
+                        <label for="cliente">Sim</label>
+                        <input type="radio" id="nao_cliente" class="forms-check" name="cliente_dellamed" value="nao" onclick="atualizarClienteDellamed('nao')">
+                        <label for="nao_cliente">Não</label>
+                    </div>
+                    <button type="submit" id="submit-button" class="forms-btn">AVANÇAR <img id="setas-btn" src="./img/seta-dir.svg" alt="" onclick="salvarDadosCSV()"></button>
+                </form>
+            </div>
+            <div id="blue-card">
+                <div id="blue-card-content">
+                    <span id="blue-card-title">Conheça o Blue Card Dellamed:</span>
+                    <span id="blue-card-slogan">O cartão VIP onde tudo fica azul</span>
+                    <br><span id="blue-card-subtitle">Confira todos os benefícios:</span>
+                    <ul>
+                        <li><b>Ganhe pontos e troque por produtos;</b></li>
+                        <li>Prioridade nos lançamentos;</li>
+                        <li>Prioridade nos embarques;</li>
+                        <li>Fachadas personalizadas;</li>
+                        <li>Tour para a matriz e filial Dellamed;</li>
+                        <li>Treinamentos;</li>
+                        <li>Ações de PDV e trade MKT.</li>
+                    </ul>
+                </div>
+                <img src="./img/blue-card.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/formulario.js"></script>
+</body>
+
+</html>
